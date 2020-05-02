@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin-top: 60px;
+    background: #2d2d2d;
+    font-family: cursive;
+}
+
+#header-button {
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.alert {
+    padding: 10px;
+}
+
+#navigation {
+    transition: all;
+    transition-duration: 1s;
+}
+
+#navigation:hover {
+    color: #03a87c;
+}
+
+.page-header {
+    padding: 10px;
+}
+
+.page-header {
+    position: relative;
+    animation-name: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes heading {
+    0% {
+        left: -1200px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40;
+}
+
+.navbar-nav .dropdown-menu a {
+    color: #e7e8eb;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+    background-color: #5e5e5e;
+    color: #00c7ce;
+}
+
+.form-inline .form-control {
+    background-color: #525252;
+    color: antiquewhite;
+}
+
+.form-inline button {
+    transition: all;
+    transition-duration: 1s;
+}
+
+.form-inline button:hover {
+    color: #525252;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #e7e8eb;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover {
+    color: #b5ff55;
+}
+
+.jumbotron {
+    background-color: #2d2d2d;
+    color: #e7e8eb;
+}
+
+.col-sm-10 {
+    padding: 0px 30px 20px 30px;
+}
+
+.img-fluid {
+    max-width: 40%;
+    max-height: auto;
+}
+
+.footer .container p {
+    color: #e7e8eb;
+}
+
+.footer {
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.footer:hover {
+    border-radius: 10px !important;
+    color: #2d2d2d !important;
+    background-color: #03a87c !important;
+}
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s ease all;
+}
+
+.dropdown-menu.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .5s ease all;
+}
+
+.btn-success {
+    color: #505050;
+}
+
+.navbar .navbar-brand {
+    padding-right: 20px;
+}
+
+#skills {
+    text-align: right;
+    color: #ee6f70;
+    font-size: larger;
+}
+
+#hobbies {
+    color: #03a87c;
+    font-size: larger;
+}
+
+.border-left {
+    border-width: 3px !important;
+}
+
+.border-right {
+    border-width: 3px !important;
+}
