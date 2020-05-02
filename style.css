@@ -8,6 +8,20 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a:not(.navdd):after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width 1s ease, background-color 1s ease;
+}
+
+a:not(.navdd):hover:after {
+    width: 100%;
+    background: #e82323;
+}
+
 #header-button {
     opacity: 0;
     animation-name: btn;
