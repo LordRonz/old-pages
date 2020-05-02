@@ -1,19 +1,27 @@
-$("#nav ul li a[href^='#']").on('click', function (e) {
+window.sr = ScrollReveal();
+sr.reveal('.navbar', {
+    duration: 2000,
+    distance: '10px',
+    origin: 'bottom'
+});
+sr.reveal('.jumbotron', {
+    duration: 2000,
+    distance: '500px',
+    origin: 'right'
+});
+sr.reveal('#skills', {
+    duration: 2000,
+    distance: '500px',
+    origin: 'left',
+    viewFactor: 0.2
+});
+sr.reveal('#hobbies', {
+    duration: 2000,
+    distance: '500px',
+    origin: 'right',
+    viewFactor: 0.2
+});
 
-    // prevent default anchor click behavior
-    e.preventDefault();
-
-    // store hash
-    var hash = this.hash;
-
-    // animate
-    $('html, body').animate({
-        scrollTop: $(hash).offset().top
-    }, 300, function () {
-
-        // when done, add hash to url
-        // (default click behaviour)
-        window.location.hash = hash;
-    });
-
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
 });

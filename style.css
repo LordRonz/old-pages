@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    margin-top: 60px;
+    margin-top: 70px;
     background: #2d2d2d;
     font-family: 'Raleway', sans-serif;
 }
@@ -24,25 +24,6 @@ a:not(.navdd):not(.carousel):after {
 a:not(.navdd):not(.carousel):hover:after {
     width: 100%;
     background: #e82323;
-}
-
-#header-button {
-    opacity: 0;
-    animation-name: btn;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-@keyframes btn {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
 }
 
 .alert {
@@ -78,6 +59,10 @@ a:not(.navdd):not(.carousel):hover:after {
     100% {
         left: 0;
     }
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
 
 .navbar-nav .dropdown-menu {
