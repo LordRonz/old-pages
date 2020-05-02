@@ -12,7 +12,7 @@ body {
     text-decoration: none;
 }
 
-a:not(.navdd):after {
+a:not(.navdd):not(.carousel):after {
     content: '';
     display: block;
     height: 2px;
@@ -21,7 +21,7 @@ a:not(.navdd):after {
     transition: width 1s ease, background-color 1s ease;
 }
 
-a:not(.navdd):hover:after {
+a:not(.navdd):not(.carousel):hover:after {
     width: 100%;
     background: #e82323;
 }
@@ -130,6 +130,11 @@ h5:hover {
 .jumbotron {
     background-color: #2d2d2d;
     color: #e7e8eb;
+    padding-bottom: 20px;
+}
+
+.jumbotron img{
+    margin-top: -50px;
 }
 
 .col-sm-10 {
@@ -179,6 +184,10 @@ h5:hover {
 
 .navbar .navbar-brand {
     padding-right: 20px;
+}
+
+#skills-hobbies {
+    margin-top: 100px;
 }
 
 #skills {
