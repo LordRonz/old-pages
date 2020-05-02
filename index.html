@@ -16,8 +16,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="200">
-
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark shadow navbar-rounded">
+        
         <a id="navigation" class="navbar-brand" href="#">Aaron Christopher</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,11 +128,36 @@
                                 d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"
                                 clip-rule="evenodd" />
                         </svg> <strong>Bootstrap</strong>
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-secondary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-light" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-dark" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
                         <a id="header-button" class="btn btn-success btn-sm float-right"
                             href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" data-toggle="tooltip"
                             data-placement="bottom" title="Dokumentasi Bootstrap">Learn More</a>
                     </h5>
                 </div>
+                
 
                 <div class="jumbotron border border-success">
                     <div class="container d-flex align-items-center flex-column">
@@ -257,6 +285,8 @@
                 <hr class="my-4">
                 <hr class="my-4">
                 <hr class="my-4">
+                
+                
 
                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel"
                     data-interval="4000">

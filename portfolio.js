@@ -49,6 +49,20 @@ sr.reveal('#education', {
     duration: 2000,
     viewFactor: 0.2
 });
+sr.reveal('.page-header', {
+    duration: 2000,
+    distance: '500px',
+    origin:'left',
+    viewFactor: 0.2
+});
+
+window.onscroll = function () { myFunction() };
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+} 
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();

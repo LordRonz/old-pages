@@ -45,20 +45,6 @@ a:not(.navdd):not(.carousel):hover:after {
 
 .page-header {
     position: relative;
-    animation-name: heading;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-@keyframes heading {
-    0% {
-        left: -1200px;
-    }
-
-    100% {
-        left: 0;
-    }
 }
 
 .navbar-brand {
@@ -192,4 +178,18 @@ h5:hover {
 
 .border-right {
     border-width: 3px !important;
+}
+
+.progress-container {
+    width: 100%;
+    background: #2d2d2d;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+    position: fixed;
+    z-index: 5;
 }
