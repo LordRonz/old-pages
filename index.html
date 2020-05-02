@@ -135,7 +135,7 @@
                     <div class="container d-flex align-items-center flex-column">
                         <img class="img-fluid" src="avataaars.png" alt="Avatar">
                     </div>
-                    <h1 id="about" class="display-4 font-italic">
+                    <h1 id="about" class="display-4">
                         <strong>About</strong></h1>
                     <p class="lead">Sedang berkuliah di Institut Teknologi Sepuluh Nopember sebagai mahasiswa Departemen
                         Teknik Komputer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo natus doloremque
@@ -150,8 +150,11 @@
                         possimus
                         suscipit iure quasi.
                     </p>
-                    <a href="https://www.lipsum.com/" class="text-white font-weight-bold" data-toggle="tooltip"
-                        data-placement="bottom" title="https://www.lipsum.com/">Lanjutkan Membaca...</a>
+                    <div id="lanjutkan">
+                        <a href="https://www.lipsum.com/" class="btn text-white font-weight-bold" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.lipsum.com/">Lanjutkan Membaca...</a>
+                    </div>     
+
                 </div>
                 <hr class="my-4">
                 <hr class="my-4">
@@ -348,13 +351,13 @@
             duration: 2000,
             distance: '500px',
             origin: 'left',
-            viewFactor:0.2
+            viewFactor: 0.2
         });
         sr.reveal('#hobbies', {
             duration: 2000,
             distance: '500px',
             origin: 'right',
-            viewFactor:0.2
+            viewFactor: 0.2
         });
     </script>
     <script>
