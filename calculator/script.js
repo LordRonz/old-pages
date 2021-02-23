@@ -123,3 +123,37 @@ point.addEventListener('click', e=>{
 delBtn.addEventListener('click', e=>{
     del();
 });
+
+document.addEventListener('keydown', e=>{
+    for(let i1 = 48, i2 = 96, j = 0; i1 < 58; ++i1, ++i2, ++j) {
+        if(e.keyCode === i1) {
+            pushNumber(String(j));
+        }
+        else if(e.keyCode === i2) {
+            pushNumber(String(j));
+        }
+    }
+    switch(e.keyCode) {
+        case 8:
+            del();
+            break;
+        case 13:
+            lesGo();
+            break;
+        case 107:
+            updateOp('+');
+            break;
+        case 109:
+            updateOp('-');
+            break;
+        case 106:
+            updateOp('*');
+            break;
+        case 111:
+            updateOp('/');
+            break;
+        case 190:
+            pushPoint('.');
+            break;
+    }
+});
