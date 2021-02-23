@@ -1,0 +1,27 @@
+body {
+    font-size: xx-large;
+}
+
+.calculator-container {
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    background-color: #afafaf;
+}
+
+.button-container {
+    padding: 1rem 1rem;
+    display: grid;
+    background-color: grey;
+    grid-template-columns: auto auto auto;
+}
+
+.display-container{
+    height: 3rem;
+    background-color: #afafaf;
+}
+
+button {
+    border-color: red;
+    font-size: inherit;
+}
