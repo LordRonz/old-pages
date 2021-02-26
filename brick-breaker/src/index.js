@@ -1,4 +1,4 @@
-import Game from "/brick-breaker/src/game.js";
+import Game from "./game.js";
 
 let canvas = document.getElementById("gameScreen");
 

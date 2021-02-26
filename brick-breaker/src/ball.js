@@ -1,4 +1,4 @@
-import { detectCollision } from "/brick-breaker/src/collisionDetection.js";
+import { detectCollision } from "./collisionDetection.js";
 
 export default class Ball {
     constructor(game) {

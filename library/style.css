@@ -30,6 +30,11 @@ body {
     border-radius: 10%;
 }
 
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 10%;
+}
+
 .library-container {
     margin-top: 1rem;
     position: relative;

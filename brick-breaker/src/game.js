@@ -1,7 +1,7 @@
-import Paddle from "/brick-breaker/src/paddle.js";
-import Ball from "/brick-breaker/src/ball.js";
-import Brick from "/brick-breaker/src/brick.js";
-import { buildLevel, level1, level2, level3 } from "/brick-breaker/src/levels.js";
+import Paddle from "./paddle.js";
+import Ball from "./ball.js";
+import Brick from "./brick.js";
+import { buildLevel, level1, level2, level3 } from "./levels.js";
 import InputHandler from "/brick-breaker/src/input.js";
 
 const GAME_STATE = {
