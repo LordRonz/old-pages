@@ -1,0 +1,107 @@
+body {
+    background-color: #000;
+    color: white;
+    font-size: large;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #797979;
+    margin-bottom: 1rem;
+}
+
+#library-title {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    min-height: 5rem; 
+}
+
+.new-book-input {
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 10%;
+}
+
+.library-container {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.book-display {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a-book {
+    word-wrap: break-word;
+    position: relative;
+    margin: 1rem;
+    width: 200px;
+    height: 100px;
+    background-color: #797979;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+button {
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color: #5cbf2a;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn-red {
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #c62d1f;
+    border-radius: 28px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+.btn-red:hover {
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color: #f24437;
+}
+
+.btn-red:active {
+    position: relative;
+    top: 1px;
+}
