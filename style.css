@@ -338,13 +338,13 @@ a {
     font-family: 'Lato', sans-serif;
 }
 
-.proj .proj-list {
-    /* display: block;
+/* .proj .proj-list {
+    display: block;
     text-align: center;
     margin: 1em 5em;
     background-color: #ff8b3d;
-    height: 5vh; */
-}
+    height: 5vh;
+} */
 
 .proj .proj__title {
     display: block;
