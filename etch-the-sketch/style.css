@@ -4,6 +4,12 @@
     --grid-size: 1px;
 }
 
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+}
+
 .header {
     display: flex;
     justify-content: center;

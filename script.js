@@ -1,69 +1,54 @@
-window.sr = ScrollReveal();
-sr.reveal('.navbar', {
-    duration: 2000,
-    distance: '10px',
-    origin: 'bottom'
-});
-sr.reveal('.jumbotron', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'right'
-});
-sr.reveal('#skills', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'left',
-    viewFactor: 0.2
-});
-sr.reveal('#hobbies', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'right',
-    viewFactor: 0.2
-});
-sr.reveal('#card1', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'left',
-    viewFactor: 0.2
-});
-sr.reveal('#card2', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'bottom',
-    viewFactor: 0.2
-});
-sr.reveal('#card3', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'top',
-    viewFactor: 0.2
-});
-sr.reveal('#card4', {
-    duration: 2000,
-    distance: '500px',
-    origin: 'right',
-    viewFactor: 0.2
-});
-sr.reveal('#education', {
-    duration: 2000,
-    viewFactor: 0.2
-});
-sr.reveal('.page-header', {
-    duration: 2000,
-    distance: '500px',
-    origin:'left',
-    viewFactor: 0.2
-});
-
-window.onscroll = function () { myFunction() };
-function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-} 
-
-$(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-});
+(function () {
+    var Animate = function () {
+        var txt = document.querySelector(".animate");
+        var strTxt = txt.textContent;
+        var splitTxt = strTxt.split("");
+        txt.textContent = "";
+        for (var i = 0; i < splitTxt.length; ++i) {
+            txt.innerHTML += "<span>" + splitTxt[i] + "</span>";
+        }
+        var char = 0;
+        var timer;
+        var animate = function () {
+            timer = setInterval(onTick, 50);
+        };
+        var onTick = function () {
+            var span = txt.querySelectorAll("span")[char++];
+            span.classList.add("fade");
+            if (char === splitTxt.length) {
+                complete();
+                return;
+            }
+        };
+        var complete = function () {
+            clearInterval(timer);
+            timer = null;
+        };
+        return { animate: animate };
+    };
+    var Typing = function () {
+        var txts = ['webpage', 'page', 'github page'];
+        var count = 0;
+        var index = 0;
+        var currentTxt = '';
+        var letter;
+        var type = function () {
+            if (count === txts.length) {
+                count = 0;
+            }
+            currentTxt = txts[count];
+            letter = currentTxt.slice(0, ++index);
+            document.querySelector('.typing').textContent = letter;
+            if (letter.length === currentTxt.length) {
+                ++count;
+                index = 0;
+            }
+            setTimeout(type, 400);
+        };
+        return { type: type };
+    };
+    var anim = Animate();
+    anim.animate();
+    var type = Typing();
+    type.type();
+})();
