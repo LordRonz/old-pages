@@ -1,24 +1,25 @@
 import Game from "./game.js";
+(function() {
+    let canvas = document.getElementById("gameScreen");
 
-let canvas = document.getElementById("gameScreen");
+    let ctx = canvas.getContext("2d");
 
-let ctx = canvas.getContext("2d");
+    const GAME_WIDTH = ctx.canvas.width;
+    const GAME_HEIGHT = ctx.canvas.height;
 
-const GAME_WIDTH = ctx.canvas.width;
-const GAME_HEIGHT = ctx.canvas.height;
+    let game = new Game(GAME_WIDTH, GAME_HEIGHT);
 
-let game = new Game(GAME_WIDTH, GAME_HEIGHT);
+    let lastTime = 0;
 
-let lastTime = 0;
+    function gameLoop(timestamp) {
+        let dt = timestamp - lastTime;
+        lastTime = timestamp;
 
-function gameLoop(timestamp) {
-    let dt = timestamp - lastTime;
-    lastTime = timestamp;
+        game.update(dt);
+        game.draw(ctx);
+        
+        requestAnimationFrame(gameLoop);
+    }
 
-    game.update(dt);
-    game.draw(ctx);
-    
     requestAnimationFrame(gameLoop);
-}
-
-requestAnimationFrame(gameLoop);
+})();
